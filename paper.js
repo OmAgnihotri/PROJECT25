@@ -12,7 +12,7 @@ class Paper
         this.r=r;
         
         this.body=Bodies.circle(this.x,this.y,this.r,options);
-        this.image = loadImage("sprites/paper.png");
+        this.image = loadImage("paper.png");
         World.add(world,this.body);
        
     }
@@ -21,10 +21,10 @@ class Paper
     var paperpos = this.body.position;
     push();
     translate(paperpos.x,paperpos.y);
-    ellipseMode(RADIUS);
+    
     strokeWeight(3);
-    fill(255,0,255);
-    ellipse(0,0,this.r,this.r);
+    fill("white");
+    
     imageMode(CENTER);
     image(this.image, 0, 0);
     pop();

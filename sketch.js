@@ -18,12 +18,15 @@ function setup() {
 
 	base = new Ground(400,550,800,10);
 	 
-	garbage = new Paper(180,500,20); 
-   
+	garbage = new Paper(180,500,10); 
+	
+	
+	
 	dustbin1 = new Dustbin(560,480,20,100);
 	dustbin2 = new Dustbin(650,540,200,20);
 	dustbin3 = new Dustbin(740,480,20,100);
-	dustbinIMG
+	
+	
 	
 
 	Engine.run(engine);
@@ -36,13 +39,13 @@ function draw() {
 	base.display();
 
 	garbage.display();
-
+	
 	dustbin1.display();
 	dustbin2.display();
 	dustbin3.display();
+	
 
-
-  
+	
   
  
 }

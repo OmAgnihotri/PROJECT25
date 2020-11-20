@@ -5,11 +5,12 @@ class Dustbin {
         isStatic:true
       }    
     this.body =Bodies.rectangle(x,y,w,h,options);
-    World.add(world,this.body);
+    
     this.width=w;
     this.height=h;
-    this.image = loadImage("sprites/dustbingreen.png");
-    }  
+    this.image = loadImage("dustbingreen.png");
+      World.add(world,this.body);
+    }
     display(){
     var pos=this.body.position;   
     var angle=this.body.angle;
