@@ -18,13 +18,11 @@ function setup() {
 
 	base = new Ground(400,550,800,10);
 	 
-	garbage = new Paper(180,500,10); 
+	garbage = new Paper(180,480,0.01); 
 	
 	
+	dustbin = new Dustbin(650,460,180,170);
 	
-	dustbin1 = new Dustbin(560,480,20,100);
-	dustbin2 = new Dustbin(650,540,200,20);
-	dustbin3 = new Dustbin(740,480,20,100);
 	
 	
 	
@@ -35,14 +33,15 @@ function setup() {
 
 function draw() {
 	rectMode(CENTER);
-	background(0);
+	background("white");
 	base.display();
 
 	garbage.display();
 	
-	dustbin1.display();
-	dustbin2.display();
-	dustbin3.display();
+
+	
+	dustbin.display();
+	
 	
 
 	

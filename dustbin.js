@@ -17,7 +17,7 @@ class Dustbin {
     push ();
     translate(pos.x,pos.y)
     rotate (angle);
-    fill("white");
+    fill("green");
     rectMode(CENTER);  
     rect(0,0,this.width,this.height);  
     imageMode(CENTER);
