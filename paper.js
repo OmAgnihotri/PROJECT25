@@ -23,10 +23,5 @@ class Paper
     push();
     translate(paperpos.x,paperpos.y);
     image(this.image, 0, 0,this.r,this.r);
-    strokeWeight(3);
-    fill("white");
-    
-    imageMode(CENTER);
-    image(this.image, 0, 0);
     pop();
 }}
