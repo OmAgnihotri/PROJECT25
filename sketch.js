@@ -16,7 +16,7 @@ function setup() {
 	world = engine.world;
 
 
-	base = new Ground(400,550,800,10);
+	base = new Ground(400,500,800,10);
 	 
 	garbage = new Paper(180,480,70); 
 	
@@ -38,16 +38,14 @@ function draw() {
 
 	garbage.display();
 	
-	dustbin1.display();
-	dustbin2.display();
-	dustbin3.display();
-	image(dustbinIMG,600,350,180,200)
+
+	image(dustbinIMG,600,300,180,200)
 	
 
 }
 function keyPressed() {
 	if (keyCode === UP_ARROW){
-		Matter.Body.applyForce(garbage.body,garbage.body.position,{x:600,y:-870});
+		Matter.Body.applyForce(garbage.body,garbage.body.position,{x:600,y:-900});
 	}
    }
 
