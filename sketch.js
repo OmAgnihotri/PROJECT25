@@ -37,9 +37,8 @@ function draw() {
 	base.display();
 
 	garbage.display();
-	
-
 	image(dustbinIMG,600,300,180,200)
+
 	
 
 }
